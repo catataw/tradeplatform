@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradePlatform.MT4.SDK.API", "TradePlatform.MT4.SDK.API\TradePlatform.MT4.SDK.API.csproj", "{44136017-54EE-4868-9557-ACB70B85BD7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DCB9132F-325F-4440-BA44-28335869E246}"
+	ProjectSection(SolutionItems) = preProject
+		TradePlatform.MT4.SDK_Release_CodePlex.nuspec = TradePlatform.MT4.SDK_Release_CodePlex.nuspec
+		TradePlatform.MT4.SDK_Release_CodePlex.ps1 = TradePlatform.MT4.SDK_Release_CodePlex.ps1
+		TradePlatform.MT4.SDK_Release_Internal.nuspec = TradePlatform.MT4.SDK_Release_Internal.nuspec
+		TradePlatform.MT4.SDK_Release_Internal.ps1 = TradePlatform.MT4.SDK_Release_Internal.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B8584486-9892-4E10-B0E4-DA76EA4BF06E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradePlatform.MT4.SDK.Library", "TradePlatform.MT4.SDK.Library\TradePlatform.MT4.SDK.Library.csproj", "{6B024C9D-EAE3-4450-981B-625D7A56A3ED}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs09
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TradePlatform.MT4.SDK.API\\TradePlatform.MT4.SDK.API.csproj
+		SccProjectName1 = TradePlatform.MT4.SDK.API
+		SccLocalPath1 = TradePlatform.MT4.SDK.API
+		SccProjectUniqueName2 = TradePlatform.MT4.SDK.Library\\TradePlatform.MT4.SDK.Library.csproj
+		SccProjectName2 = TradePlatform.MT4.SDK.Library
+		SccLocalPath2 = TradePlatform.MT4.SDK.Library
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44136017-54EE-4868-9557-ACB70B85BD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44136017-54EE-4868-9557-ACB70B85BD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44136017-54EE-4868-9557-ACB70B85BD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44136017-54EE-4868-9557-ACB70B85BD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B024C9D-EAE3-4450-981B-625D7A56A3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B024C9D-EAE3-4450-981B-625D7A56A3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B024C9D-EAE3-4450-981B-625D7A56A3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B024C9D-EAE3-4450-981B-625D7A56A3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

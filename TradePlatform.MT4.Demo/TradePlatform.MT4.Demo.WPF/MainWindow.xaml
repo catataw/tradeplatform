@@ -1,0 +1,37 @@
+﻿<Window x:Class="TradePlatform.MT4.Demo.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="544" Width="844">
+    <Grid>
+        <Button x:Name="SellButton" Content="Sell" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="150" Height="52" FontWeight="Bold" Click="SellButton_Click"/>
+        <Button x:Name="BuyButton" Content="Buy" HorizontalAlignment="Right" Margin="0,10,170,0" VerticalAlignment="Top" Width="150" Height="52" FontWeight="Bold" Click="BuyButton_Click"/>
+        <Label x:Name="BidPrice" Content="Bid:" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.447,-0.231" FontWeight="Bold"/>
+        <Label x:Name="AskPrice" Content="Ask:" HorizontalAlignment="Left" Margin="132,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.447,-0.231" FontWeight="Bold"/>
+        <DataGrid x:Name="DataGridOpen" Margin="10,132,0,0" VerticalAlignment="Top" ColumnWidth="Auto" Height="168">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="OrderTicket" Binding="{Binding Path=OrderTicket}" ClipboardContentBinding="{x:Null}" Width="*"/>
+                <DataGridTextColumn Header="Symbol" Binding="{Binding Path=Symbol}" ClipboardContentBinding="{x:Null}" Width="*"/>
+                <DataGridTextColumn Header="Size" Binding="{Binding Path=Size}" ClipboardContentBinding="{x:Null}" Width="*"/>
+                <DataGridTextColumn Header="Profit" Binding="{Binding Path=Profit}" ClipboardContentBinding="{x:Null}" Width="*"/>
+                <DataGridTemplateColumn ClipboardContentBinding="{Binding Path=Close}" Header="Close" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="OrderClose_Click">Close</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="DataGridHistory" Margin="10,336,0,0" ColumnWidth="Auto">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="OrderTicket" Binding="{Binding Path=OrderTicket}" ClipboardContentBinding="{x:Null}" Width="*"/>
+                <DataGridTextColumn Header="Symbol" Binding="{Binding Path=Symbol}" ClipboardContentBinding="{x:Null}" Width="*"/>
+                <DataGridTextColumn Header="Size" Binding="{Binding Path=Size}" ClipboardContentBinding="{x:Null}" Width="*"/>
+                <DataGridTextColumn Header="Profit" Binding="{Binding Path=Profit}" ClipboardContentBinding="{x:Null}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Open:" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.447,-0.231" FontWeight="Bold"/>
+        <Label x:Name="lblHistory" Content="History:" HorizontalAlignment="Left" Margin="10,305,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.447,-0.231" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

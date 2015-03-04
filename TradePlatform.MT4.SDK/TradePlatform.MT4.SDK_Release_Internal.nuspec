@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>TradePlatform.MT4.SDK_DEBUG</id>
+    <version>3.5.3.1</version>
+    <title>Trade Platform SDK for MT4 (Debug)</title>
+    <authors>TradePlatform</authors>
+    <owners />
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>My package description.</description>
+    <dependencies>
+      <dependency id="Autofac" version="3.0.1" />
+      <dependency id="Autofac.Mef" version="3.0.0" />
+      <dependency id="Microsoft.Data.Edm" version="5.4.0" />
+      <dependency id="Microsoft.Data.OData" version="5.4.0" />
+      <dependency id="Microsoft.Data.Services" version="5.4.0" />
+      <dependency id="Microsoft.Data.Services.Client" version="5.4.0" />
+      <dependency id="System.Spatial" version="5.4.0" />
+      <dependency id="TradePlatform.MT4_DEBUG" version="3.5.3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="TradePlatform.MT4.SDK.API\bin\Debug\TradePlatform.MT4.SDK.API.dll" target="lib\net45\TradePlatform.MT4.SDK.API.dll" />
+    <file src="TradePlatform.MT4.SDK.API\bin\Debug\TradePlatform.MT4.SDK.API.pdb" target="lib\net45\TradePlatform.MT4.SDK.API.pdb" />
+    <file src="TradePlatform.MT4.SDK.Library\bin\Debug\TradePlatform.MT4.SDK.Library.dll" target="lib\net45\TradePlatform.MT4.SDK.Library.dll" />
+    <file src="TradePlatform.MT4.SDK.Library\bin\Debug\TradePlatform.MT4.SDK.Library.pdb" target="lib\net45\TradePlatform.MT4.SDK.Library.pdb" />
+  </files>
+</package>
