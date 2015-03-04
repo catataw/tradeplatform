@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\3.6.0.0\Console\TradePlatform.MT4.SDK.API.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{487B7CC7-F73F-4943-8E1E-C80C17E9FA01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TradePlatform.MT4.SDK.API</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>3.6.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>TradePlatform.MT4.SDK.API</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="TradePlatform.MT4.Core">
+      <HintPath>lib\TradePlatform.MT4.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountInformation.cs" />
+    <Compile Include="Checkup.cs" />
+    <Compile Include="CommonFunctions.cs" />
+    <Compile Include="ADX_MODE.cs" />
+    <Compile Include="APPLY_PRICE.cs" />
+    <Compile Include="BAND_MODE.cs" />
+    <Compile Include="GATOR_MODE.cs" />
+    <Compile Include="ICHIMOKU_MODE.cs" />
+    <Compile Include="MACD_MODE.cs" />
+    <Compile Include="MA_METHOD.cs" />
+    <Compile Include="SYMBOLS.cs" />
+    <Compile Include="TIME_FRAME.cs" />
+    <Compile Include="ORDER_TYPE.cs" />
+    <Compile Include="POOL_MODES.cs" />
+    <Compile Include="SELECT_BY.cs" />
+    <Compile Include="MARKER_INFO_MODE.cs" />
+    <Compile Include="WindowFunctions.cs" />
+    <Compile Include="PredefinedVariables.cs" />
+    <Compile Include="TechnicalIndicators.cs" />
+    <Compile Include="TradingFunctions.cs" />
+    <Compile Include="Constants\UNINITIALIZE_REASON.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

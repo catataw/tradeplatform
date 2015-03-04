@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradePlatform.MT4.SDK.API", "TradePlatform.MT4.SDK.API\TradePlatform.MT4.SDK.API.csproj", "{44136017-54EE-4868-9557-ACB70B85BD7C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DCB9132F-325F-4440-BA44-28335869E246}"
@@ -20,19 +22,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B85844
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradePlatform.MT4.SDK.Library", "TradePlatform.MT4.SDK.Library\TradePlatform.MT4.SDK.Library.csproj", "{6B024C9D-EAE3-4450-981B-625D7A56A3ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradePlatform.MT4.Demo.Library", "..\TradePlatform.MT4.Demo\TradePlatform.MT4.Demo.Library\TradePlatform.MT4.Demo.Library.csproj", "{79D2448B-93E2-4F90-93DA-AD4D303F854C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradePlatform.MT4.Demo.Terminal", "..\TradePlatform.MT4.Demo\TradePlatform.MT4.Demo.Terminal\TradePlatform.MT4.Demo.Terminal.csproj", "{88BD7A24-1B5C-4ED6-8862-5E6356142885}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradePlatform.MT4.Core", "..\TradePlatform.MT4.Core\TradePlatform.MT4.Core.csproj", "{DBF55857-F683-45E2-8706-616EEBD62676}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradePlatform.MT4.Engine", "..\TradePlatform.MT4.Engine\TradePlatform.MT4.Engine.csproj", "{F763DCD8-6232-43E9-8649-BB8FB2FA91B8}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs09
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = TradePlatform.MT4.SDK.API\\TradePlatform.MT4.SDK.API.csproj
-		SccProjectName1 = TradePlatform.MT4.SDK.API
-		SccLocalPath1 = TradePlatform.MT4.SDK.API
-		SccProjectUniqueName2 = TradePlatform.MT4.SDK.Library\\TradePlatform.MT4.SDK.Library.csproj
-		SccProjectName2 = TradePlatform.MT4.SDK.Library
-		SccLocalPath2 = TradePlatform.MT4.SDK.Library
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -46,6 +44,22 @@ Global
 		{6B024C9D-EAE3-4450-981B-625D7A56A3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B024C9D-EAE3-4450-981B-625D7A56A3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B024C9D-EAE3-4450-981B-625D7A56A3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D2448B-93E2-4F90-93DA-AD4D303F854C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D2448B-93E2-4F90-93DA-AD4D303F854C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D2448B-93E2-4F90-93DA-AD4D303F854C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D2448B-93E2-4F90-93DA-AD4D303F854C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88BD7A24-1B5C-4ED6-8862-5E6356142885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BD7A24-1B5C-4ED6-8862-5E6356142885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BD7A24-1B5C-4ED6-8862-5E6356142885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BD7A24-1B5C-4ED6-8862-5E6356142885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBF55857-F683-45E2-8706-616EEBD62676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF55857-F683-45E2-8706-616EEBD62676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF55857-F683-45E2-8706-616EEBD62676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF55857-F683-45E2-8706-616EEBD62676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F763DCD8-6232-43E9-8649-BB8FB2FA91B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F763DCD8-6232-43E9-8649-BB8FB2FA91B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F763DCD8-6232-43E9-8649-BB8FB2FA91B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F763DCD8-6232-43E9-8649-BB8FB2FA91B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

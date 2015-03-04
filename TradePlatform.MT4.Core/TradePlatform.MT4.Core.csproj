@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\3.6.0.0\Console\TradePlatform.MT4.Core.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBF55857-F683-45E2-8706-616EEBD62676}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TradePlatform.MT4.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>3.6.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>TradePlatform.MT4.Core</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System" />
+    <Reference Include="TradePlatform.MT4.Data">
+      <HintPath>lib\TradePlatform.MT4.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="TradePlatform.MT4.Engine">
+      <HintPath>lib\TradePlatform.MT4.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Container`1.cs" />
+    <Compile Include="Bridge.cs" />
+    <Compile Include="MqlHandler.cs" />
+    <Compile Include="ExpertAdvisor.cs" />
+    <Compile Include="MetaTrader4.cs" />
+    <Compile Include="QuoteListener.cs" />
+    <Compile Include="QuoterExtensions.cs" />
+    <Compile Include="Exceptions\MqlErrorException.cs" />
+    <Compile Include="Exceptions\HandlerExecutionException.cs" />
+    <Compile Include="Exceptions\HandlerLoadException.cs" />
+    <Compile Include="Exceptions\MessageException.cs" />
+    <Compile Include="Utils\ExpertInfo.cs" />
+    <Compile Include="Utils\Convertor.cs" />
+    <Compile Include="Utils\MethodCallInfo.cs" />
+    <Compile Include="Config\HandlerElement.cs" />
+    <Compile Include="Config\HandlerElementCollection.cs" />
+    <Compile Include="Config\HostElementCollection.cs" />
+    <Compile Include="Config\BridgeConfiguration.cs" />
+    <Compile Include="Config\ParameterElementCollection.cs" />
+    <Compile Include="Config\ParameterElement.cs" />
+    <Compile Include="Config\HostElement.cs" />
+    <Compile Include="Internals\HandlerProvider.cs" />
+    <Compile Include="Internals\HandlerHost.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
